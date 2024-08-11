@@ -164,3 +164,6 @@
 ..\obj\main.o: ..\HARDWARE\LCD\pic.h
 ..\obj\main.o: ..\HARDWARE\TOUCH\touch.h
 ..\obj\main.o: ..\Middlewares\LVGL\GUI\lvgl\examples\porting\lv_port_disp_template.h
+..\obj\main.o: ..\HARDWARE\timer\Timer.h
+..\obj\main.o: ..\Middlewares\LVGL\GUI\lvgl\examples\porting\lv_port_indev_template.h
+..\obj\main.o: ..\Middlewares\LVGL\GUI\lvgl\lv_conf.h

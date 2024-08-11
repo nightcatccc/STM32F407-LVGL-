@@ -25,7 +25,7 @@ void Timer7_Init(void)//??
 	NVIC_InitStruct.NVIC_IRQChannelCmd=ENABLE;
 	NVIC_Init(&NVIC_InitStruct);
 	
-	TIM_Cmd(TIM7,DISABLE);
+	TIM_Cmd(TIM7,ENABLE);
 
 	
 }
