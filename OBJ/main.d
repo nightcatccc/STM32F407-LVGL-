@@ -167,3 +167,5 @@
 ..\obj\main.o: ..\HARDWARE\timer\Timer.h
 ..\obj\main.o: ..\Middlewares\LVGL\GUI\lvgl\examples\porting\lv_port_indev_template.h
 ..\obj\main.o: ..\Middlewares\LVGL\GUI\lvgl\lv_conf.h
+..\obj\main.o: chinese.c
+..\obj\main.o: main_p.c

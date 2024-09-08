@@ -43,8 +43,10 @@
 #include "Timer.h"
 #include "lv_port_indev_template.h"
 #include "lv_conf.h"
+#include "chinese.c"
+#include "main_p.c"
 
-
+extern const lv_font_t my_custom_font;
 int main(void)
 {
 	Timer7_Init();
@@ -53,11 +55,19 @@ int main(void)
 	lv_port_disp_init();
 	lv_port_indev_init();
 
+	static lv_style_t style;
+
+	lv_obj_t *label = lv_label_create(lv_scr_act());
+	lv_label_set_text( label,"如意金箍棒");
+	lv_style_init(&style);
+	lv_style_set_text_font(&style, &chinese);
+	lv_obj_add_style(label,&style,LV_STATE_DEFAULT);
 	
-	lv_obj_t* switch_obj=lv_switch_create(lv_scr_act());
-	lv_obj_set_size(switch_obj,120,60);
-	lv_obj_align(switch_obj,LV_ALIGN_CENTER,0,0);
-	
+	LV_IMG_DECLARE(main_p);//此处输入c文件名字
+
+	lv_obj_t *img = lv_img_create(lv_scr_act());  // 在 obj 上创建图像对象
+	lv_img_set_src(img, &main_p);  // 设置图像源
+	lv_obj_align(img, LV_ALIGN_CENTER, 0, 0);  // 图像居中显示
 	while(1)
 	{
 //		tp_dev.scan(0);//ɨ��
