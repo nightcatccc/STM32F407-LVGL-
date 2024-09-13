@@ -29,11 +29,11 @@ void Timer7_Init(void)//??
 
 	
 }
-
-void TIM7_IRQHandler()//20ms???
+int count;
+void TIM7_IRQHandler()
 {
 	if(TIM_GetITStatus(TIM7, TIM_IT_Update) == SET){
-		
+		count++;
 		lv_tick_inc(1);
 		
 		TIM_ClearITPendingBit(TIM7, TIM_IT_Update);

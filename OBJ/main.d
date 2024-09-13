@@ -169,3 +169,13 @@
 ..\obj\main.o: ..\Middlewares\LVGL\GUI\lvgl\lv_conf.h
 ..\obj\main.o: chinese.c
 ..\obj\main.o: main_p.c
+..\obj\main.o: jiantu.c
+..\obj\main.o: chasulun.c
+..\obj\main.o: jiantou.c
+..\obj\main.o: xiaoche.c
+..\obj\main.o: fxp.c
+..\obj\main.o: bjt.c
+..\obj\main.o: ..\HARDWARE\usart\Serial3.h
+..\obj\main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\main.o: lanyalianjie.c
+..\obj\main.o: lanyafeilianjie.c

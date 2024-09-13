@@ -340,7 +340,7 @@
               <MiscControls>--locale=english</MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\LCD;..\FWLIB\inc;..\HARDWARE\TOUCH;..\Middlewares\LVGL\GUI;..\Middlewares\LVGL\GUI\lvgl;..\Middlewares\LVGL\GUI\lvgl\src;..\Middlewares\LVGL\GUI\lvgl\examples\porting;..\HARDWARE\timer</IncludePath>
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\HARDWARE\LCD;..\FWLIB\inc;..\HARDWARE\TOUCH;..\Middlewares\LVGL\GUI;..\Middlewares\LVGL\GUI\lvgl;..\Middlewares\LVGL\GUI\lvgl\src;..\Middlewares\LVGL\GUI\lvgl\examples\porting;..\HARDWARE\timer;..\HARDWARE\usart</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -433,6 +433,16 @@
               <FileName>Timer.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\HARDWARE\timer\Timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>Serial2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\usart\Serial2.c</FilePath>
+            </File>
+            <File>
+              <FileName>Serial3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\usart\Serial3.c</FilePath>
             </File>
           </Files>
         </Group>
