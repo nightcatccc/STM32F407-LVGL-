@@ -62,11 +62,11 @@ float odom;
 float pose_x;
 float pose_y;
 
-static void set_label_opacity(lv_obj_t * obj, int value)
+static void set_label_opacity(lv_obj_t * obj, int value)//渐隐渐显动画
 {
 	lv_obj_set_style_opa(obj, value, 0); 
 }
-static void set_img_opacity(lv_obj_t * obj, int value)
+static void set_img_opacity(lv_obj_t * obj, int value)//渐隐渐显
 {
 	lv_obj_set_style_opa(obj, value, 0); 
 }
